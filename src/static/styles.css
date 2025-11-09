@@ -160,8 +160,8 @@ footer {
 }
 
 .participants-list {
-  list-style: disc;
-  margin-left: 20px;
+  list-style: none;
+  margin-left: 0;
   padding-left: 0;
   max-height: 120px;
   overflow: auto;
@@ -175,6 +175,20 @@ footer {
   border: 1px solid #f0f0f0;
   font-size: 14px;
   color: #2a2a2a;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.delete-participant {
+  cursor: pointer;
+  color: #cc0000;
+  opacity: 0.7;
+  transition: opacity 0.2s;
+}
+
+.delete-participant:hover {
+  opacity: 1;
 }
 
 /* Empty participants hint */
